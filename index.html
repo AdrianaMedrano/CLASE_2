@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="es"> */ idioma de la pagina */
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase de box model</title>
+    <title>Ejemplo de Herencia en CSS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> AAAAAAH box modeeel </h1>
-</body>
-<main>
-    <section class="producto">
-        <figure>
-            <h2> AQUI ES UN ENCABEZADO H2 </h2>
-            <P>Parrafo de la primer cajaParrafo de la primer <br>
-                cajaParrafo de la primer cajaParrafo de la primer<br>
-                 caja </P>
-        </figure>
-        <figure> 
-            <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2FHOLIDAY_2024-Spooky.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=740&fit=max" alt="IMAGEN TARJETA 1">
-        </figure>
-        
+    <h1>Este es un encabezado h1 con fondo morado</h1>
+    <section>
+        <div id="izquierda">
+            <h2>Encabezado H2 dentro de la sección izquierda</h2>
+            <p>Este es un párrafo dentro de la sección izquierda. Hereda el color y la fuente del body.</p>
+        </div>
+
+        <div id="derecha">
+            <img src="https://via.placeholder.com/600x400" alt="Imagen ejemplo">
+        </div>
     </section>
-</main>
+    <div>
+        <p>Este es un párrafo dentro de un div genérico. Hereda la fuente y el color del body.</p>
+    </div>
+    <div class="clase2">
+        <p>Este texto es azul y usa Arial como fuente. Hereda propiedades como el borde.</p>
+        <a href="#">Este es un enlace dentro de .clase2</a>
+    </div>
+    <button>Haz clic aquí</button>
+</body>
 </html>

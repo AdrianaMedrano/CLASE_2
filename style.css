@@ -1,5 +1,3 @@
-
-
 h1 {
     background-color: rebeccapurple;
     margin: 10px;
@@ -11,22 +9,61 @@ section {
     width: 100%;
     height: 100%;
 }
-
-section img{
+div img {
     width: 100%;
     height: 100%;
-    position: inherit;
+    position: inherit; /* Hereda la posición del contenedor */
 }
-
-figure {
+div {
     display: inline-block;
-    color: white;
+    color: white; /* Color de texto heredado por los hijos */
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri; /* Fuente heredada por los hijos */
     width: 600px;
-    /* overflow: hidden;*/
-    vertical-align: middle;
     padding: 0;
-    margin: 0
-    ;
+    margin: 0;
+    overflow: hidden;
+}
+#izquierda {
+    padding: 0 20px 160px 20px;
+}
+#derecha {
+    padding: 8px 0px 8px 88px;
+}
+.clase2 p {
+    color: blue; 
+    font-family: Arial; 
+    border: inherit; 
+    font-size: 18px; 
+}
+/* Herencia de color y fuente de los contenedores */
+.clase2 {
+    font-size: 16px; 
+    color: green;
+    border: solid 2px #ccc; 
+    padding: 10px;
+}
+.clase2 a {
+    color: yellow; 
+    text-decoration: none;
+}
+.clase2 a:hover {
+    color: red; /
+}
+/* Ejemplo de herencia en los botones */
+button {
+    font-family: inherit;
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px; 
+}
+button:hover {
+    background-color: darkgreen; 
 }
